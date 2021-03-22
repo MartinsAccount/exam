@@ -25,6 +25,10 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -36,7 +40,7 @@ h1 {
       flex-wrap: wrap;
 }
 
-.container div {
+.container .card-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,45 +48,67 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
   -ms-flex-preferred-size: 23%;
       flex-basis: 23%;
   min-width: 250px;
-  padding: 25px;
 }
 
-.container div button {
+.container .card-container button {
   text-transform: uppercase;
   letter-spacing: 2px;
+  outline: none;
+  border: none;
+  text-align: start;
+  background: transparent;
+  color: #f9b64b;
+  margin-top: 5px;
+  font-weight: 600;
+  width: 50%;
 }
 
-.container div p {
+.container .card-container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 25px;
+  height: 100%;
+}
+
+.container .card-container .card p {
   font-size: 14px;
   line-height: 1.4;
 }
 
-.container div:nth-child(1) {
+.container .card-container .card:nth-child(1) {
   background-color: #1c1717;
 }
 
-.container div:nth-child(1) p {
+.container .card-container .card:nth-child(1) p {
   color: #eae9e4;
   font-size: 16px;
 }
 
-.container div:nth-child(1) p:nth-child(-n + 3) {
+.container .card-container .card:nth-child(1) p:nth-child(-n + 2) {
   color: #f9b64b;
 }
 
-.container div:nth-child(2) {
+.container .card-container .card:nth-child(2) {
   background-color: #f2f2f2;
 }
 
-.container div:nth-child(2) p:nth-child(-n + 2) {
+.container .card-container .card:nth-child(2) p:nth-child(-n + 2) {
   color: #f9b64b;
   font-size: 16px;
 }
 
-.container div:nth-child(3) {
+.container .card-container .card:nth-child(3) {
   background-color: #1c1717;
 }
 
