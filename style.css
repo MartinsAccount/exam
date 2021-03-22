@@ -82,34 +82,86 @@ h1 {
 }
 
 .container .card-container .card p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
 }
 
-.container .card-container .card:nth-child(1) {
+.first {
   background-color: #1c1717;
 }
 
-.container .card-container .card:nth-child(1) p {
+.first p {
   color: #eae9e4;
-  font-size: 16px;
+  font-size: 22px;
 }
 
-.container .card-container .card:nth-child(1) p:nth-child(-n + 2) {
+.first p:nth-child(-n + 3) {
   color: #f9b64b;
 }
 
-.container .card-container .card:nth-child(2) {
+.second {
   background-color: #f2f2f2;
 }
 
-.container .card-container .card:nth-child(2) p:nth-child(-n + 2) {
+.second p:nth-child(-n + 2) {
   color: #f9b64b;
   font-size: 16px;
 }
 
-.container .card-container .card:nth-child(3) {
+.third {
   background-color: #1c1717;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.third .play-icon {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 1px solid #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: auto 0;
+}
+
+.third .play-icon .button.play {
+  width: 74px;
+  height: 74px;
+  border-style: solid;
+  border-color: #f2f2f2;
+  border-width: 37px 0px 37px 74px;
+  border-color: transparent transparent transparent #f2f2f2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #1c1717;
+}
+
+.third #lecture {
+  margin: auto 0 0 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #f9b64b;
+  font-size: 20px;
 }
 
 /* Burger menu */
